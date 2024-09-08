@@ -7,16 +7,6 @@ import (
 	"strconv"
 )
 
-package main
-
-
-import (
-"fmt"
-"os"
-"bufio"
-"strconv"
-)
-
 func main() {
 	var _ = strconv.Itoa // Ignore this comment. You can still use the package "strconv".
 
@@ -38,7 +28,7 @@ func main() {
 	if scanner.Scan() {
 		texto := scanner.Text()
 		d2, _ = strconv.ParseFloat(texto, 64)
-		fmt.Printf("%0.1f\n", d2 + d)
+		fmt.Printf("%0.1f\n", d2+d)
 	}
 
 	if scanner.Scan() {
